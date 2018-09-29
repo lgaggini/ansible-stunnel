@@ -1,0 +1,10 @@
+---
+# stunnel packages to be installed
+stunnel_packages:
+  - stunnel4
+
+# stunnels to configure
+stunnel_stunnels:
+  - name: mystunnel
+    listen: localhost:465
+    endpoint: remotehost:465

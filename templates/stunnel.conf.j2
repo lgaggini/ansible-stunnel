@@ -1,0 +1,6 @@
+{% for stunnel in stunnel_stunnels %}
+[{{ stunnel.name }}]
+client = yes
+accept = {{ stunnel.listen }}
+connect = {{ stunnel.endpoint }}
+{% endfor %}
